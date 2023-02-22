@@ -37,7 +37,7 @@ rel="stylesheet">
     <section class="main-container">
       <div class="container">
   <h1 class="main-title">Effective Solutions for Your Business</h1>
-  <button type="button" class="btn main-btn">Order Service</button>
+  <button type="button" class="btn main-btn" data-modal-open>Order Service</button>
 </div>
 </section>
   <!--Description list-->
@@ -321,15 +321,16 @@ rel="stylesheet">
 </div>
   </div>
 </footer>
-<div class="backdrop">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="modal-button">
+    <button type="button" class="modal-button" data-modal-close>
       <svg class="modal-button-icon" width="8" height="8">
         <use href="./images/symbol-defs.svg#icon-close-black-18dp-1"></use>
       </svg>
     </button>
   </div>
 </div>
+<script src="./js/modal.js"></script>
   </body>
 </html>
 
